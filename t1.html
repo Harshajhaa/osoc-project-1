@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+        <style type="text/css">
+            *{padding: 0; margin:0; box-sizing: border-box;}
+            header{
+                width: 100%;
+                height: 100vh;
+                background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('im.jpg');
+                background-size: cover;
+                font-family: sans-serif;
+
+            }
+            nav {
+            width: 100%;
+            height: 100px;
+            color:white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 30px 30px;
+            font-size: 15px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+
+        }
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+            font-size: 15px;
+            background: indianred;
+            border-radius: 8px;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+            transition: 0.4s;
+
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+            transition: 0.4s;
+
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    OSOC
+                </div>
+                    <div class="menu">
+                        <a href="https://osoc.nitt.edu/">ABOUT</a>
+                        <a href="https://r.search.yahoo.com/_ylt=AwrPrUedM1RjndkzxBa7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1666491422/RO=10/RU=https%3a%2f%2fwww.instagram.com%2fosoc_nitt%2f/RK=2/RS=_AfB3I6VZ5Am26sgCX_JLRg_lxs-">EVENTS</a>
+                        <a href="https://r.search.yahoo.com/_ylt=Awrx_yjcM1RjATw0Zzm7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1666491484/RO=10/RU=https%3a%2f%2fwww.instagram.com%2fosoc_nitt%2f/RK=2/RS=yOtoBY_siVqCylxfR2JpP1Iam2o-">GLIMPSES</a>
+                        <a href="https://r.search.yahoo.com/_ylt=Awrx_yh2M1Rj7tEy9Om7HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1666491383/RO=10/RU=https%3a%2f%2fin.linkedin.com%2fin%2fosoc-nitt-82a395221/RK=2/RS=rJ8qUfiPThzuFCW1ebP1SpCC098-">CONTACT</a>
+                    </div>
+                    <div class="register">
+                        <a href="https://osoc.nitt.edu/">Register</a>
+                    </div>
+            </nav>
+            <section class="h-txt">
+                <span>Welcome</span>
+                <h1>NITT</h1>
+                <br>
+                <a href="https://osoc.nitt.edu/">Click Here</a>
+            </section>
+        </header>
+    </body>
+</html>
